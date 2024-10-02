@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script>
+        function calculateDivision() {  
+            var result = document.getElementById("result");
+
+            var a = document.getElementById("side1").value;
+            var b = document.getElementById("side2").value;
+             
+            a = parseInt(a);
+            b = parseInt(b);
+            
+          
+         
+            var division = a / b;
+
+            result.innerHTML = division; 
+        }c
+
+        function calculateMultiplication() {
+            var result = document.getElementById("result");
+            var a = document.getElementById("side1").value;
+            var b = document.getElementById("side2").value;
+        
+            var multiplication = a * b;
+            result.innerHTML = multiplication; 
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form>
+        <input type="text" id="side1" placeholder="Enter 1st number">
+        <input type="text" id="side2" placeholder="Enter 2nd number">
+        
+        <button type="button" onclick="calculateDivision()">Calculate Division</button>
+        <button type="button" onclick="calculateMultiplication()">Calculate Multiplication</button>
+    </form>
+    <p id="result">Result will be displayed here</p>
+</body>
+</html>
